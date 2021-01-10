@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lisa Ann|Фотограф</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="#" class="header__burger">
+				<span class="header__burger-stick"></span>
+			</a>	
+			<div id="header__nav" class="header__nav"> 
+				<nav class="header__list">
+					<ul>
+						<li class="header__line-active">
+
+							<a id="mainBtn" class="mainBtn btn" href="index.html">Главная</a>
+							<div class="header__nav-line"></div>
+							<div class="spans">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span> 
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<a id="portBtn" class="portBtn btn" href="portfolio.html">Порфтолио</a>
+							<div class="header__nav-line"></div>
+							<div class="spans">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<a id="aboutBtn" class="aboutBtn btn"  href="about.html">Обо мне</a>
+							<div class="header__nav-line"></div>
+							<div class="spans">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<a id="contactsBtn" class="contactsBtn btn" href="contacts.html">Контакты</a>
+							<div class="header__nav-line"></div>
+							<div class="spans">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="title__anime-wrap title__anime-main" id="title__anime-wrap" style="display: none;"> 
+			<div class="title__anime" id="title__anime"></div>
+		</div>
+	</header>
+
+	
+	<section class="main" id="portfolio">
+		<div class="container">
+			<div class="main__wrap">
+				<div class="main__slider">
+					<div class="main__img-all main__img"></div>
+					<div class="main__img-all main__img2"></div>
+					<div class="main__img-all main__img3"></div>
+					<div class="main__img-all main__img4"></div>
+					<div class="main__img-all main__img7"></div>
+					<div class="main__img-all main__img8"></div>
+					<div class="main__img-all main__img9"></div>
+					<div class="main__img-all main__img11"></div>
+				</div>
+				<h2 class="main__text">composition</h2>
+			</div>
+		</div>
+	</section>
+
+	<footer id="link" class="link">
+		<div class="container">
+			<div class="link__wrap">
+				<div class="link__item">
+					<h2 class="link__title">Телефон</h2>
+					<p class="link__p">+7 938 999 66 88</p>
+				</div>
+				<div class="link__item">
+					<h2 class="link__title">Instagram</h2>
+					<p class="link__p">@lisa_Ann</p>
+				</div>
+				<div class="link__item">
+					<h2 class="link__title">E-mail</h2>
+					<p class="link__p">pochta@gamil.com</p>
+				</div>
+				<div class="link__img"></div>
+			</div>
+		</div>
+		
+	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.main__slider').slick({
+				dots: true,
+				infinite: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear',
+				autoplay: true,
+				autoplaySpeed: 1000
+			});
+		});
+	</script>
+	
+</body>
+</html>

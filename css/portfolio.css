@@ -1,0 +1,238 @@
+.portfolio {
+  padding-bottom: 150px;
+  /* .portfolio__mobile-btn */
+}
+.portfolio__wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portfolio__title {
+  grid-area: 1/1/2/2;
+  width: 380px;
+  color: #F37113;
+  font-size: 50px;
+  font-family: 'Kelly Slab', cursive;
+  text-transform: uppercase;
+}
+.portfolio__side {
+  position: fixed;
+}
+.portfolio__mobile-btn {
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: none;
+  background-color: #f37113;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 9;
+}
+.portfolio__mobile-btn span {
+  width: 8px;
+  border-radius: 50%;
+  height: 8px;
+  background-color: #fff;
+  display: block;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+}
+.portfolio__mobile-btn span:before, .portfolio__mobile-btn span:after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  content: '';
+  position: absolute;
+  transition: .5s ease;
+}
+.portfolio__mobile-btn span:before {
+  transform: translateX(13px);
+}
+.portfolio__mobile-btn span:after {
+  transform: translateX(-13px);
+}
+.portfolio__mobile-active span:before {
+  transform: translate(13px, -12px);
+}
+.portfolio__mobile-active span:after {
+  transform: translate(-13px, 12px);
+}
+
+.buttons {
+  grid-area: 2/1/3/2;
+  padding-bottom: 20px;
+  /* .buttons__item */
+}
+.buttons__wrap {
+  display: flex;
+}
+.buttons__item {
+  border: 1px solid #F37113;
+  border-radius: 5px;
+  padding: 1px 5px;
+  color: #000;
+  font-size: 17px;
+  margin-right: 15px;
+  margin-top: 10px;
+  transition: .2s ease;
+}
+.buttons__item:hover {
+  background: #F37113;
+  color: #fff;
+  transition: .2s ease;
+}
+.buttons__active {
+  background: #F37113;
+  color: #F37113;
+  transition: .2s ease;
+  /*border: 1px dotted #fff;*/
+  /*background: url(../img/telka1.jpg);*/
+  background-size: contain;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-gap: 20px;
+  margin: -20px auto;
+  grid-area: 2/2;
+  /*.gallery__item*/
+}
+.gallery__item .gallery__img {
+  margin-top: 20px;
+  height: 100%;
+  min-height: 200px;
+  display: block;
+  transition: 1s ease;
+}
+.gallery__item .gallery__img:hover {
+  background-position: 30% !important;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.gallery__item:first-child .gallery__img {
+  width: 450px;
+  display: block;
+}
+.gallery__item:first-child .gallery__img:first-child {
+  background-image: url(../img/telka1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:first-child .gallery__img:nth-child(2) {
+  background-image: url(../img/telka2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:first-child .gallery__img:nth-child(3) {
+  background-image: url(../img/telka3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:first-child .gallery__img:nth-child(4) {
+  background-image: url(../img/telka4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:first-child .gallery__img:nth-child(5) {
+  background-image: url(../img/telka5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:first-child .gallery__img:nth-child(6) {
+  background-image: url(../img/telka6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img {
+  width: 450px;
+  display: block;
+}
+.gallery__item:last-child .gallery__img:first-child {
+  background-image: url(../img/telka7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img:nth-child(2) {
+  background-image: url(../img/telka8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img:nth-child(3) {
+  background-image: url(../img/zemfira.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img:nth-child(4) {
+  background-image: url(../img/girl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img:nth-child(5) {
+  background-image: url(../img/telka4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__item:last-child .gallery__img:nth-child(6) {
+  background-image: url(../img/telka9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery__imgHeight-580 .gallery__img {
+  height: 580px;
+}
+.gallery__imgHeight-500 .gallery__img {
+  height: 500px;
+}
+.gallery__img__active {
+  opacity: 1 !important;
+  transition: 1s ease !important;
+  position: absolute !important;
+  width: 80% !important;
+  height: 90vh !important;
+  margin: 0 auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 100 !important;
+  top: 3% !important;
+}
+.gallery__item__active {
+  width: 100% !important;
+  height: 100vh !important;
+}
+.gallery__active {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: #000000e3;
+  top: 0;
+}
+
+.entrails__active {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  top: 0;
+}
+
+.active__background {
+  opacity: .4;
+}
+
+.active__background2 {
+  width: 95%;
+}

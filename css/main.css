@@ -1,0 +1,120 @@
+body {
+  background-color: #F6F8AA;
+}
+
+.main {
+  margin-top: 50px;
+  padding-bottom: 70px;
+  /* .main__wrap */
+  /* .main__img */
+  /* .main__img2 */
+  /* .main__img3 */
+  /* .main__img4 */
+  /* .main__img7 */
+  /* .main__img8 */
+  /* .main__img9 */
+  /* .main__img10 */
+  /* .main__text */
+}
+.main__wrap {
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+.main__img {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img2 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img3 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img4 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img7 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img8 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img9 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/girl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__img11 {
+  width: 400px !important;
+  height: 500px !important;
+  background-image: url(../img/telka9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.main__text {
+  animation-duration: .2s;
+  transform: translateY(-1010px);
+  transition: 2s ease;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Kelly Slab', cursive;
+  color: #F37113;
+  font-size: 100px;
+  letter-spacing: 0.4em;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__text-active {
+  transform: translateY(0px);
+}
+
+/*li.glide__slide.main__img.glide__slide--active {
+    height: 500px;
+}
+
+ul.glide__slides {
+    height: 500px;
+}*/
+.slick-list.draggable {
+  width: 400px;
+  height: 500px;
+}
+
+.slick-prev, .slick-next,
+ul.slick-dots {
+  display: none !important;
+}

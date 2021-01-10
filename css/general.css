@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Comfortaa', cursive;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  /*  max-width: 100%;*/
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  background-color: #F6F8AA;
+}
+
+.container {
+  width: 100%;
+  max-width: 1036px;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-bottom: 50px;
+  margin-top: 30px;
+  /* .header__nav */
+  /* .header__list */
+  /* .header__line-active */
+  /* .header__nav-line */
+}
+.header__nav {
+  animation-duration: .2s;
+  transform: translateY(-1010px);
+  transition: 3s ease;
+  width: 900px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.header__list {
+  display: flex;
+  width: 100%;
+}
+.header__list ul {
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+.header__list li {
+  border-radius: 38px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  display: block;
+  width: 190px;
+  height: 33px;
+  text-align: center;
+  position: relative;
+  transition: .5s ease;
+}
+.header__list li a {
+  z-index: 8;
+  color: #F37113;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  font-size: 20px;
+  font-family: 'Comfortaa', cursive;
+  text-transform: lowercase;
+}
+.header__list li .spans {
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  height: 0px;
+  width: 100%;
+}
+.header__list li .spans span {
+  width: 12px;
+  height: 1px;
+  top: 50%;
+  background-color: #F37113;
+  display: block;
+  transform: rotate(45deg);
+  content: "";
+  margin-left: 3px;
+}
+.header__list li .spans span:before {
+  width: 12px;
+  position: absolute;
+  height: 1px;
+  top: 50%;
+  background-color: orange;
+  display: block;
+  transform: rotate(90deg);
+  content: "";
+}
+.header__list li:hover {
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 38px;
+  border: 1px solid #F37113;
+  z-index: 500;
+}
+.header__list li:hover a {
+  opacity: 0;
+  color: #fff;
+}
+.header__list li:hover .spans {
+  display: flex;
+}
+.header__line-active {
+  background-image: url(../img/arrow1.png);
+  background-repeat: no-repeat;
+  background-position: 50% 56%;
+}
+.header__line-active a {
+  color: #000 !important;
+}
+
+.title {
+  overflow: hidden;
+  /* .title__anime-wrap */
+  /* .title__anime */
+}
+.title__anime-wrap {
+  overflow: hidden;
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  margin: 85px auto;
+  z-index: 6;
+}
+.title__anime-about {
+  margin: 50px auto;
+  right: 21px;
+}
+.title__anime-contacts {
+  margin: 105px auto;
+  right: 506px;
+  width: 352px;
+  height: 461px;
+}
+.title__anime-port {
+  margin: 50px auto;
+  right: 0;
+  left: 850px;
+  width: 450px;
+  height: 500px;
+}
+.title__anime h4 {
+  color: #fff;
+  font-family: 'Stalinist One', cursive;
+  font-size: 36px;
+  text-transform: lowercase;
+  text-align: center;
+  line-height: 2;
+  animation: 1.5s linear 0s infinite normal none running textanim;
+}
+
+@keyframes textanim {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+}
+.anim__nav {
+  transform: translateY(0px);
+}
+
+.link {
+  border-top: 1px solid #f3711340;
+  /* .link__title */
+}
+.link__wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.link__title {
+  text-transform: uppercase;
+}
+.link__img {
+  display: none;
+}

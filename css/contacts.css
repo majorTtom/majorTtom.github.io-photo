@@ -1,0 +1,73 @@
+.contacts {
+  /* .contacts__wrap */
+  /* .contacts__img */
+  /* .contacts__info */
+  /* .contacts__item */
+  /* .contacts__title */
+  /* .contacts__stroke */
+  /* .contacts__link */
+  /* .contacts__icon */
+}
+.contacts__wrap {
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+}
+.contacts__img {
+  width: 352px;
+  height: 461px;
+  display: block;
+  background: gray;
+  margin-left: 88px;
+  background-image: url(../img/girl.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contacts__info {
+  margin-top: -50px;
+  margin-left: 350px;
+}
+.contacts__item {
+  width: 244px;
+}
+.contacts__title {
+  margin-top: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  font-weight: 100;
+}
+.contacts__stroke {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+.contacts__stroke a {
+  color: #000;
+  font-size: 20px;
+}
+.contacts__icon {
+  align-self: center;
+  justify-self: end;
+}
+
+.background {
+  position: absolute;
+  top: -40px;
+  z-index: -1;
+  /* .background__item */
+}
+.background__item {
+  display: flex;
+  flex-direction: row;
+}
+.background__item h1 {
+  font-family: 'Kelly Slab', cursive;
+  color: #F37113;
+  font-size: 150px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-right: 10px;
+  opacity: .3;
+}
